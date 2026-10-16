@@ -1,0 +1,17 @@
+# Money Reactor
+- Type: API
+- Description: Agent-native micro APIs priced for autonomous agents: a funded crypto/GitHub bounty feed with trust filtering (GET /api/bounties, $0.01) and GitHub repository honeypot trust scoring with GO/CAUTION/HONEYPOT_RISK verdicts (GET /api/honeypot?repo=owner/name, $0.005). Responses are plain JSON; every 402 response carries full payment requirements for both x402 v1 and v2 plus Bazaar discovery metadata (method, output schema with examples).
+- Website (HTTPS): https://makar52nn2016-jpg.github.io/money-reactor/
+- Logo (HTTPS): https://raw.githubusercontent.com/makar52nn2016-jpg/money-reactor/main/docs/logo.svg
+- Documentation: https://makar52nn2016-jpg.github.io/money-reactor/ (live origin resolver + full price list); machine-readable OpenAPI at `<origin>/openapi.json` and `/.well-known/x402`
+- Public repository: https://github.com/makar52nn2016-jpg/money-reactor
+- Networks and chain identifiers: Base mainnet (eip155:8453)
+- Paid resource URLs and HTTP methods: GET `<origin>/api/bounties` ($0.01); GET `<origin>/api/honeypot?repo=owner/name` ($0.005). The origin is rotated by a watchdog and the canonical current URL is published at https://raw.githubusercontent.com/makar52nn2016-jpg/money-reactor/main/live-url.json (agents resolve it at runtime; the Pages site shows the same value).
+- x402 version and payment scheme: x402 v2 (`exact`, network `eip155:8453`) and x402 v1 (`exact`, network `base`) — both advertised in every 402 response.
+- Token contract or mint, decimals: USDC (Base) `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`, 6 decimals.
+- Seller payment recipient addresses: `0xf47b7e5912Fd4218aC4c992Cdc6FAE04e1fF512E` (this is the sole payTo address in all payment requirements).
+- Facilitator URL and supported endpoint: none — payments are verified server-side against the buyer's on-chain authorization (EIP-3009 transferWithAuthorization for v2, EIP-712 permit-style header for v1); no third-party facilitator is involved.
+- Facilitator signer / relayer addresses (if applicable): not applicable.
+- Example successful settlement hashes and explorer links: none yet — the service is live and Bazaar-validated but has not recorded its first sale. This field will be updated via a new PR with real settlement hashes; none are invented here.
+- Ownership evidence (domain-hosted proof or public project reference): the payTo address is published in the repository's README, in the Pages-site storefront, in `server.json` at the repo root, and returned verbatim by every 402 response from the live origin (`https://loop-clearing-collectors-organised.trycloudflare.com/api/health` shows the same receiver). The public repository https://github.com/makar52nn2016-jpg/money-reactor contains the full server source.
+- Public support channel: https://github.com/makar52nn2016-jpg/money-reactor/issues
