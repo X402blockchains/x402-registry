@@ -1,0 +1,15 @@
+# Agent Kiosk
+- Type: API / AI agent
+- Description: 12-in-1 pay-per-call B2A intelligence supermarket & MCP server on Base (DEX order-flow alpha, multi-chain whale wallet profiler, smart contract honeypot/tax audit, prediction market odds, DeFi highest-APY radar, B2B local business leads, domain/SaaS stack intelligence, package CVE audit, academic search, and prompt-injection-safe web markdown extraction).
+- Website (HTTPS): https://agent-kiosk.vercel.app
+- Logo (HTTPS): https://agent-kiosk.vercel.app/favicon.ico
+- Documentation: https://agent-kiosk.vercel.app/openapi.json
+- Public repository: https://github.com/ralf9090/agent-kiosk
+- Networks and chain identifiers: Base Mainnet (eip155:8453)
+- Paid resource URLs and HTTP methods: POST https://agent-kiosk.vercel.app/v1/social-search, POST https://agent-kiosk.vercel.app/v1/maps-leads, POST https://agent-kiosk.vercel.app/v1/web-extract, POST https://agent-kiosk.vercel.app/v1/security-audit, POST https://agent-kiosk.vercel.app/v1/token-alpha, POST https://agent-kiosk.vercel.app/v1/domain-intel, POST https://agent-kiosk.vercel.app/v1/package-audit, POST https://agent-kiosk.vercel.app/v1/academic-search, POST https://agent-kiosk.vercel.app/v1/wallet-profiler, POST https://agent-kiosk.vercel.app/v1/prediction-markets, POST https://agent-kiosk.vercel.app/v1/defi-yields, POST https://agent-kiosk.vercel.app/v1/github-intel
+- x402 version and payment scheme: x402 v2, exact scheme
+- Token contract or mint, decimals: 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 (USDC, 6 decimals)
+- Seller payment recipient addresses: 0xd8429209Aee6A398B9707DFf5F28AAA93452eE95
+- Facilitator URL and supported endpoint: https://x402.org/facilitator
+- Ownership evidence (domain-hosted proof or public project reference): https://agent-kiosk.vercel.app/.well-known/x402.json and https://github.com/ralf9090/agent-kiosk
+- Public support channel: https://github.com/ralf9090/agent-kiosk/issues
