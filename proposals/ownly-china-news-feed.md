@@ -1,0 +1,17 @@
+# Ownly China News Feed
+- Type: API
+- Description: China news in English and Chinese from public sources, ranked hot lists from Weibo 微博, Baidu 百度, Zhihu 知乎, Toutiao 今日头条, Douyin 抖音, Bilibili 哔哩哔哩 and Kuaishou 快手, and a deletion watch for removed topics. Pay per call, no API key; free `/sample`.
+- Website (HTTPS): https://ownly-cmf-x402.joyd-ai-2026.workers.dev
+- Logo (HTTPS): https://github.com/joydai2026-del.png
+- Documentation: https://ownly-cmf-x402.joyd-ai-2026.workers.dev/openapi.json
+- Public repository: https://github.com/joydai2026-del/china-news-feed-mcp
+- Networks and chain identifiers: Base mainnet (eip155:8453)
+- Paid resource URLs and HTTP methods: GET /v1/feed/en, GET /v1/feed/zh, GET /v1/hot, GET /v1/deletions (discovery: /.well-known/x402)
+- x402 version and payment scheme: x402 v1, exact (EIP-3009)
+- Token contract or mint, decimals: USDC 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913, 6 decimals; price 10000 ($0.01)
+- Seller payment recipient addresses: 0x7bb40af451f7e6fcb7c844a0ac9e709b92854f5f
+- Facilitator URL and supported endpoint: Coinbase CDP facilitator, https://api.cdp.coinbase.com/platform/v2/x402 (/supported)
+- Facilitator signer / relayer addresses (if applicable): n/a (seller only; CDP settles)
+- Example successful settlement hashes and explorer links: no mainnet settlement yet (launched Oct 17 2026). Pre-launch Base Sepolia test settlement: https://sepolia.basescan.org/tx/0xbcddac9f0ce03769f48274402ace9d266aab63f982ddf3202f6061f2fbe657de
+- Ownership evidence (domain-hosted proof or public project reference): the API is linked from the README of https://github.com/joydai2026-del/china-news-feed-mcp, submitted from that GitHub account
+- Public support channel: https://github.com/joydai2026-del/china-news-feed-mcp/issues
