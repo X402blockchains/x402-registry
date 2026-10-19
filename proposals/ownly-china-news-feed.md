@@ -1,10 +1,10 @@
 # Ownly China News Feed
 - Type: API
-- Description: China news in English and Chinese from public sources, ranked hot lists from Weibo 微博, Baidu 百度, Zhihu 知乎, Toutiao 今日头条, Douyin 抖音, Bilibili 哔哩哔哩 and Kuaishou 快手, and a deletion watch for removed topics. Pay per call, no API key; free `/sample`.
+- Description: Chinese news and hot lists in one dataset; flags topics that vanish from the Weibo 微博, Baidu 百度, Zhihu 知乎, Toutiao 头条 and Bilibili B站 hot lists as likely censored, with evidence. Pay per call, no API key; free `/sample`.
 - Website (HTTPS): https://ownly-cmf-x402.joyd-ai-2026.workers.dev
 - Logo (HTTPS): https://github.com/joydai2026-del.png
 - Documentation: https://ownly-cmf-x402.joyd-ai-2026.workers.dev/openapi.json
-- Public repository: https://github.com/joydai2026-del/china-news-feed-mcp
+- Public repository: https://github.com/joydai2026-del/china-news-feed-mcp (the Apify-token MCP wrapper, a separate access option from this keyless x402 API)
 - Networks and chain identifiers: Base mainnet (eip155:8453)
 - Paid resource URLs and HTTP methods: GET /v1/feed/en, GET /v1/feed/zh, GET /v1/hot, GET /v1/deletions (discovery: /.well-known/x402)
 - x402 version and payment scheme: x402 v1, exact (EIP-3009)
@@ -13,5 +13,5 @@
 - Facilitator URL and supported endpoint: Coinbase CDP facilitator, https://api.cdp.coinbase.com/platform/v2/x402 (/supported)
 - Facilitator signer / relayer addresses (if applicable): n/a (seller only; CDP settles)
 - Example successful settlement hashes and explorer links: no mainnet settlement yet (launched Oct 17 2026). Pre-launch Base Sepolia test settlement: https://sepolia.basescan.org/tx/0xbcddac9f0ce03769f48274402ace9d266aab63f982ddf3202f6061f2fbe657de
-- Ownership evidence (domain-hosted proof or public project reference): the API is linked from the README of https://github.com/joydai2026-del/china-news-feed-mcp, submitted from that GitHub account
+- Ownership evidence (domain-hosted proof or public project reference): submitted from the GitHub account joydai2026-del, which owns the repository above. That repository's README does not link this API yet; adding it is pending.
 - Public support channel: https://github.com/joydai2026-del/china-news-feed-mcp/issues
