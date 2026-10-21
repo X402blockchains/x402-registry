@@ -5,7 +5,7 @@
 - Website (HTTPS): https://yruz.one
 - Logo (HTTPS): https://yruz.one/content/themes/yruz/images/favicon.png
 - Documentation: https://yruz.one/llms.txt (also https://yruz.one/auth.md and https://yruz.one/x402.php)
-- Public repository: none (closed source); machine-readable contracts are public: https://yruz.one/openapi.json, https://yruz.one/.well-known/x402, https://yruz.one/.well-known/apis.json
+- Public repository: https://github.com/xzntexe/yruz-x402 (public catalogue, OpenAPI and client examples; the service source is closed). Machine-readable contracts: https://yruz.one/openapi.json, https://yruz.one/.well-known/x402, https://yruz.one/.well-known/apis.json
 - Networks and chain identifiers: Solana mainnet (solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp) and Base mainnet (eip155:8453). Every 402 offers the same price on both.
 - Paid resource URLs and HTTP methods: the live list is at https://yruz.one/.well-known/x402 (141 resources); every resource accepts GET with query parameters and POST with a JSON body (https://yruz.one/openapi.json, 269 operations with x-payment-info). Host: yruz.one only.
 - x402 version and payment scheme: x402 v2 (PAYMENT-REQUIRED header, PAYMENT-SIGNATURE) and x402 v1 (JSON body, X-PAYMENT), scheme exact
