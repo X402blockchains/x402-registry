@@ -8,6 +8,7 @@
 - Logo URL: https://page-read.agent-audit.workers.dev/favicon.svg
 - Documentation or getting-started link: https://page-read.agent-audit.workers.dev/llms.txt (OpenAPI: https://page-read.agent-audit.workers.dev/openapi.json)
 - Public support channel: parafield-dev@mail.grokbot.com (the contact published in the OpenAPI document)
+- Official project account: https://github.com/agent-audit-x402 (GitHub). This is the one shared official account for both page-read and agent-audit; neither project has an X/Twitter account.
 
 ## Networks and activity
 - Networks: Base
@@ -38,7 +39,8 @@ This was an operator test paid from the service's own wallet: payer and payee ar
 - Resource output (fields trimmed; nothing sensitive in it): `{"url": "https://example.com", "finalUrl": "https://example.com/", "upstreamStatus": 200, "title": "Example Domain", "format": "markdown", "content": "This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes.", "chars": 156, "truncated": false, "sha256": "25ddf2c883e0d1958ea971d279a7e4f0fd446724ee3db7db19dadabd4a62e484", "fetchedAt": "2026-10-19T05:55:08.427Z"}`
 
 ## Ownership reference
-- Each service's llms.txt has an "Operator" section naming the GitHub account agent-audit-x402 (https://github.com/agent-audit-x402) and linking this proposal PR (https://github.com/X402blockchains/x402-registry/pull/14): https://page-read.agent-audit.workers.dev/llms.txt
+- Domain-hosted reference: the "Operator" section of https://page-read.agent-audit.workers.dev/llms.txt (and of the related service's llms.txt) names the GitHub account agent-audit-x402 (https://github.com/agent-audit-x402) as the shared official project account for agent-audit and page-read, and links this listing (https://github.com/X402blockchains/x402-registry/pull/14).
+- Shared official account: https://github.com/agent-audit-x402, which opened and maintains both proposals.
 
 ## Buyer guide
 - Exact x402 v2 flow (402 PAYMENT-REQUIRED → PAYMENT-SIGNATURE → PAYMENT-RESPONSE receipt), production facilitator URL, and what to do when payment status is uncertain: https://page-read.agent-audit.workers.dev/llms.txt, sections "How to pay (x402 v2, exact scheme)" and "If the payment status is uncertain".
