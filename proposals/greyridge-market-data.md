@@ -52,7 +52,14 @@ Total live resources in manifest: **62**.
 - Payment scheme / version: `exact`, x402 version 2.
 - Token contract and decimals: USDC `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`, 6 decimals, Base mainnet (eip155:8453).
 - Receiving wallet: `0x5765ae06a52dc7A0BB71c36A11db512c7ea9ed10` — merchant receiving address, not a facilitator signer/relayer.
-- Successful settlement: paid settlement is live. `GET /metrics` reports 5,277 settled paid calls across the catalogue, routed through the CDP facilitator. A specific Base mainnet settlement transaction link with a decoded receipt — labelled operator test, per the review guidance — will be appended to this proposal. No transaction counts or user numbers are invented here beyond the public `/metrics` figure.
+- Successful settlement: paid settlement is live and verifiable on-chain. **Operator test settlement (labelled), Base mainnet:**
+  - Tx: [`0x2821af0057408caf18c5034182ab63c5904e3dffbde0ecb89e92c76e860a7432`](https://basescan.org/tx/0x2821af0057408caf18c5034182ab63c5904e3dffbde0ecb89e92c76e860a7432)
+  - Named resource: `GET /chain/token-report` tier — amount **0.01 USDC (10,000 atomic)**.
+  - Decoded ERC-20 Transfer (USDC `0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`): `0xc4852c26498d3187dec2ce1b19e840710e302d1e` (operator buyer) → `0x5765ae06a52dc7A0BB71c36A11db512c7ea9ed10` (merchant receiving wallet), **0.010000 USDC**.
+  - Submitted by the CDP facilitator relayer `0xb87e1a2cc2b4643f2892768e80e41167f17c5860` via EIP-3009 `exact` scheme (merchant wallet is not the signer/relayer).
+  - Block `52863233`, status `0x1` (success), timestamp `2026-10-20T17:03:33Z`.
+  - Redacted success response: `HTTP/1.1 200 OK` with JSON body and header `X-PAYMENT-RESPONSE: <base64>` decoding to `{ "success": true, "transaction": "0x2821af00…a7432", "network": "base", "payer": "0xc4852c…d1e" }`.
+  - Aggregate: `GET /metrics` reports 5,277+ settled paid calls across the catalogue, all routed through the CDP facilitator. No user counts invented beyond the public `/metrics` figure.
 
 ## Integration
 1. Call the resource URL. On `402`, read `accepts[0]`: `scheme`, `network`, `asset`, `amount`, `payTo`, `maxTimeoutSeconds`, and `extra { name, version, decimals }` (the EIP-712 domain for USDC).
@@ -62,6 +69,6 @@ Total live resources in manifest: **62**.
 5. Free preview: every paid route exposes `/<route>/preview` returning a real sample with no payment, for wiring and testing.
 
 ## Remaining before completed integration
-- Operator to append a Base mainnet settlement transaction link + decoded receipt for a named resource and amount (operator test, labelled).
+- ✅ Base mainnet settlement transaction link + decoded receipt appended above (named resource `GET /chain/token-report`, 0.01 USDC, operator test, labelled).
 - Applicant represents the project via the official website https://greyridgesignals.ai and this GitHub account.
 - No historical volume, user count or ownership signature is claimed beyond the public `/metrics` figure. Figures appear only after a reliable public feed is connected.
