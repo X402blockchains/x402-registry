@@ -1,6 +1,6 @@
 # Horizon Pulse
 - Type: API (seller; not a facilitator)
-- Description: Pay-per-call APIs over x402, no API key: web search, web fetch to markdown, HTTP proxy, structured page extract, PDF to text, x402 endpoint checks, SEC/BLS/Treasury data, domain checks, NWS weather, a website audit and an agent-readiness report, across 55 paid routes. Also a remote MCP server at https://horizonpulse.dev/mcp (53 tools). Payments in USDC on Base and Solana; the 402 may also list Polygon, XRPL and EURC entries, which are not part of this listing.
+- Description: Pay-per-call APIs over x402, no API key: web search, web fetch to markdown, HTTP proxy, structured page extract, PDF to text, x402 endpoint checks, SEC/BLS/Treasury data, domain checks, NWS weather, a website audit and an agent-readiness report, across 58 paid HTTP resources (unique paid URLs listed at https://horizonpulse.dev/.well-known/x402, including 2 Base-only premium tiers; 65 paid OpenAPI operations, since some URLs accept GET and POST; 3 free routes are not counted). Also a remote MCP server at https://horizonpulse.dev/mcp (56 tools from tools/list: 30 paid, 23 that only return a route's payment terms without charging, and 3 free). Payments in USDC on Base for all 58 resources and on Solana for 28 of them; the 402 may also list Polygon, XRPL and EURC entries, which are not part of this listing.
 - Website (HTTPS): https://horizonpulse.dev
 - Logo (HTTPS): https://horizonpulse.dev/icon.png
 - Documentation: https://horizonpulse.dev/llms.txt
