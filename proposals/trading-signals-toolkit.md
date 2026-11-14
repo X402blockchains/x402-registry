@@ -20,7 +20,7 @@
 ## Payments — only if your product accepts payments
 - Paid endpoint and HTTP method:
   - GET https://signals.incomefather.com/solana/token-verdict?mint=<mint> (0.01 USDC)
-  - GET https://signals.incomefather.com/base/token-verdict?token=<address> (0.01 USDC)
+  - GET https://signals.incomefather.com/base/token-verdict?address=<address> (0.01 USDC)
   - GET https://signals.incomefather.com/crypto/whale-flow?token=<address or mint>&hours=24 (0.02 USDC)
   - GET https://signals.incomefather.com/bundle/token-pre-trade?token=<address or mint> (0.015 USDC)
   - Full route list: https://signals.incomefather.com/openapi.json
