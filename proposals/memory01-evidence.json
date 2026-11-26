@@ -1,0 +1,68 @@
+{
+  "service": "memory",
+  "named_route": "POST /api/memory/search",
+  "price_usd": 0.01,
+  "network": "eip155:8453",
+  "asset": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+  "payTo": "0xe9a827d9453e9b18040c25bb492a568ddd827549",
+  "payer": "0xe9a827D9453E9B18040C25bB492a568ddd827549",
+  "captured_at_utc": "2026-11-26T10:17:14Z",
+  "request_redacted": {
+    "agent_id": "x402-registry-evidence",
+    "write_token": "<redacted>",
+    "query": "x402 correlation",
+    "top_k": 1
+  },
+  "http_status": 200,
+  "response_retained_redacted": {
+    "agent_id": "x402-registry-evidence",
+    "credits_remaining": 0,
+    "cursor_expires_in": null,
+    "free_searches_remaining": 0,
+    "free_tier": false,
+    "next_cursor": null,
+    "ok": true,
+    "query": "x402 correlation",
+    "returned": 1,
+    "searched_at": "2026-11-26T10:17:14+00:00",
+    "session_filter": null,
+    "settlement_tx": "0x53152ba5fdb55ec8c77097dc8a65bb676b8ab3e16ddf1f86bf0b30e3db386bee",
+    "tier": "free",
+    "total_results": 1,
+    "total_stored": 1
+  },
+  "results_sample": [
+    {
+      "agent_id": "x402-registry-evidence",
+      "base": false,
+      "ip": "78.47.131.13",
+      "key": "evidence",
+      "metadata": {},
+      "searchable": true,
+      "session_id": null,
+      "stored_at": "2026-11-26T10:16:13+00:00",
+      "updated_at": "2026-11-26T10:16:13+00:00",
+      "value": "x402 correlation test"
+    }
+  ],
+  "payment_response_header_raw_present": true,
+  "payment_response_decoded": {
+    "success": true,
+    "transaction": "0x53152ba5fdb55ec8c77097dc8a65bb676b8ab3e16ddf1f86bf0b30e3db386bee",
+    "network": "eip155:8453",
+    "payer": "0xe9a827d9453e9b18040c25bb492a568ddd827549"
+  },
+  "note": "Operator self-pay test. No reusable signed payment authorization retained; write_token redacted.",
+  "settlement_verification": {
+    "checked_on_chain": true,
+    "rpc": "https://mainnet.base.org",
+    "usdc_transfer": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+    "amount_atomic": 10000,
+    "amount_usd": 0.01,
+    "from": "0xe9a827d9453e9b18040c25bb492a568ddd827549",
+    "to": "0xe9a827d9453e9b18040c25bb492a568ddd827549",
+    "status": "success"
+  },
+  "explorer": "https://basescan.org/tx/0x53152ba5fdb55ec8c77097dc8a65bb676b8ab3e16ddf1f86bf0b30e3db386bee",
+  "operator_test": true
+}
